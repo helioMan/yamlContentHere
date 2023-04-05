@@ -1,0 +1,92 @@
+# This section defines some basic syntax examples
+club1: Liverpool # A variable containing the name of a football club
+trophy1: 6 Champions League # A variable containing the number of Champions League trophies won by the club
+player1: Steven Gerrard # A variable containing the name of a football player
+
+club2: Real Madrid # A variable containing the name of another football club
+trophy2: 13 Champions League # A variable containing the number of Champions League trophies won by the club
+player2: Karim Benzema # A variable containing the name of another football player
+
+# This section defines some variables with different data types
+episode_count: 170 # An integer variable
+average_rating: 8 # A float variable
+is_completed: false # A boolean variable
+title: Black Clover # A string variable
+
+characters: # An array variable containing a list of characters
+  - Yami Sukehiro
+  - Charlotte Flair
+  - Charmy
+
+main_character: # An object variable containing information about a main character
+  name: Asta Staria
+  age: 20
+  village: Haji village
+  powers: # An array within an object
+    - Weilding Anti-magic
+    - Channeling Ki
+    - Black Divider
+    - Black Slash
+    - Black Hurricane
+
+secondary_character: null # A null variable
+
+other_details: # An object variable with multiple data types
+  genre: action
+  release_year: 2017
+  rating: 0.8
+  is_adapted_from_manga: true
+
+anime: # An array of objects
+  - title: MHA
+    genre: Action
+  - title: Black Clover
+    genre: Shonen
+  - title: Saiki K
+    genre: Comedy
+  
+actor: # An object variable with a list of movies
+  name: Steve Carell
+  age: 60
+  movies:
+    - Date Night
+    - Crazy Stupid Love
+    - Get Smart
+    - Evan, the almighty
+    - Alexander and the terrible horrible
+
+director: # Another object variable with a list of movies
+  name: Christopher Nolan
+  age: 52
+  movies:
+    - Batman Begins
+    - Inception
+    - Tenet
+    - Interstellar
+    - Dunkirk
+    - Memento
+
+# A flow variable containing a list of sitcoms
+sitcoms: [Friends, Brooklyn Nine-Nine, The Office]
+
+# A multi-line string variable containing a famous quote
+quote: |
+  "May the Force be with you."
+  -Obi-Wan Kenobi, Star Wars
+
+# Anchors and aliases to reuse code
+date_night_ideas: # An array variable containing date night ideas
+  - &dinner "Make fancy dinner at home" # An anchored value for dinner
+  - &movie "Watch a romantic movie" # An anchored value for a movie
+  - &picnic "Have a picnic in the park" # An anchored value for a picnic
+  - &game_night "Host a game night with friends" # An anchored value for a game night
+
+romantic_date_night: # An array variable containing a list of date night ideas for a romantic date
+  - *dinner # Reusing the anchored value for dinner
+  - *movie # Reusing the anchored value for a movie
+  - *picnic # Reusing the anchored value for a picnic
+
+group_friends_nights: # An array variable containing a list of date night ideas for a group date
+  - *game_night
+  - *movie
+  - *picnic
